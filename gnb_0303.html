@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alion 양지부화장</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+	    <meta name="description" content="Alion 양지부화장">
+        <link href="css/common.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <!-- 상단 메뉴 영역 시작-->
+                <div class="gnb-wrap">
+                    <div class="gnb">
+                        <h1 class="logo">ALion</h1>
+                        <ul>
+                            <li><a href="#">종계정보</a></li>
+                            <li><a href="#">산란계정보</a></li>
+                            <li class="active"><a href="#">부화장정보</a></li>
+                            <li><a href="#">데이터관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="util">
+
+                        <div class="select-s">
+                            <div class="header-wrap">
+                                <div class="value">와이즈농장</div>
+                                <div><img src="images/icon/chevron-down-s.svg"></div>
+                            </div>
+                            <div class="bottom-wrap">
+                                <div class="list-wrap">
+                                    <div class="option">와이즈농장</div>
+                                    <div class="option">레이크농장</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-Line-gray-s">로그아웃</button>
+                    </div>
+                </div>
+                <!-- 상단 메뉴 영역 끝-->
+            </header>
+            
+            <main>
+                
+                <!--컨텐츠 영역 시작-->
+                <section class="content">
+                    <div class="lnb-wrap">
+                        <div class="lnb">
+                            <ul>
+                                <li><a href="#">수정률관리</a></li>
+                                <li><a href="#">배부율예측</a></li>
+                                <li class="active"><a href="#">부화장이력</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cont-wrap">
+                        <!--조회 영역 시작-->
+                        <div class="item">
+                            <div class="search-box">
+                                <div>
+                                    <label class="label-normal">부화장</label>
+                                    <select name="부화장" required>
+                                        <option value="" disabled  selected>선택</option>
+                                        <option value="1">A부화장</option>
+                                        <option value="2">B부화장</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="label-normal">계사</label>
+                                    <select name="계사" required>
+                                        <option value="" disabled  selected>선택</option>
+                                        <option value="1">1-1동</option>
+                                        <option value="2">1-2동</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="label-normal">계군번호</label>
+                                    <select name="계군번호" required>
+                                        <option value="" disabled  selected>선택</option>
+                                        <option value="1">22-05-02</option>
+                                        <option value="2">22-05-03</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="label-normal">품종</label>
+                                    <input type="text" value="" style="width: 150px;" disabled/>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn-primary-l">조회</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--조회 영역 끝-->
+
+
+                        <!--테이블 영역 시작-->
+                        <div class="item">
+                            <div class="table-box">
+                                <div class="board-type2">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:140px;" />
+                                            <!--열 갯수만큼 추가해줘야 너비가 고정됨-->
+                                            <col style="width:100px;" />
+                                            <col style="width:100px;" />
+                                            <col style="width:100px;" />
+                                            <col style="width:100px;" />
+                                            <col style="width:100px;" />
+                                            <col style="width:100px;" />
+                                            <col style="width:100px;" />
+                                            <col style="width:100px;" />
+                                            <col style="width:100px;" />
+                                            <col style="width:100px;" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>일령</th>
+                                                <th>입란일</th>
+                                                <th>발생일</th>
+                                                <th>계사</th>
+                                                <th>부화장명</th>
+                                                <th>종란입고</th>
+                                                <th>입장수</th>
+                                                <th>등외란</th>
+                                                <th>입란수</th>
+                                                <th>등외률</th>
+                                                <th>건란일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1일령(22.05.01)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2일령(22.05.02)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3일령(22.05.03)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4일령(22.05.04)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5일령(22.05.05)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6일령(22.05.06)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7일령(22.05.07)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8일령(22.05.08)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9일령(22.05.09)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10일령(22.05.10)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11일령(22.05.11)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12일령(22.05.12)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>13일령(22.05.13)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14일령(22.05.14)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>15일령(22.05.15)</td>
+                                                <td>22.05.01</td>
+                                                <td>22.05.01</td>
+                                                <td>1</td>
+                                                <td>A부화장</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!--버튼 영역 시작-->
+                            <div class="btn-box">
+                                <div>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn-Line-primary-m">
+                                        엑셀 다운로드</button>
+                                </div>
+                            </div>
+                            <!--버튼 영역 끝-->
+                        </div>
+
+                    </div>
+
+                </section>
+                <!--컨텐츠 영역 끝-->
+
+            </main>
+
+        </div>
+    </body>
+
+    
+    <!--셀렉트박스 커스텀 시작 (농장선택)-->
+    <script>
+        const selectBoxElements = document.querySelectorAll(".select-s");
+
+        function toggleSelectBox(selectBox) {
+        selectBox.classList.toggle("active");
+        }
+
+        function selectOption(optionElement) {
+        const selectBox = optionElement.closest(".select-s");
+        const selectedElement = selectBox.querySelector(".value");
+        selectedElement.textContent = optionElement.textContent;
+        }
+
+        selectBoxElements.forEach(selectBoxElement => {
+        selectBoxElement.addEventListener("click", function (e) {
+            const targetElement = e.target;
+            const isOptionElement = targetElement.classList.contains("option");
+
+            if (isOptionElement) {
+            selectOption(targetElement);
+            }
+
+            toggleSelectBox(selectBoxElement);
+        });
+        });
+
+        document.addEventListener("click", function (e) {
+        const targetElement = e.target;
+        const isSelect = targetElement.classList.contains("select") || targetElement.closest(".select-s");
+
+        if (isSelect) {
+            return;
+        }
+
+        const allSelectBoxElements = document.querySelectorAll(".select-s");
+
+        allSelectBoxElements.forEach(boxElement => {
+            boxElement.classList.remove("active");
+        });
+        });
+    </script>
+    <!--셀렉트박스 커스텀 끝 (농장선택)-->
+</html>

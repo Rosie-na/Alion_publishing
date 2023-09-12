@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alion 양지부화장</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+	    <meta name="description" content="Alion 양지부화장">
+        <link href="css/common.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <!-- 상단 메뉴 영역 시작-->
+                <div class="gnb-wrap">
+                    <div class="gnb">
+                        <h1 class="logo">ALion</h1>
+                        <ul>
+                            <li><a href="#">종계정보</a></li>
+                            <li><a href="#">산란계정보</a></li>
+                            <li><a href="#">부화장정보</a></li>
+                            <li class="active"><a href="#">데이터관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="util">
+
+                        <div class="select-s">
+                            <div class="header-wrap">
+                                <div class="value">와이즈농장</div>
+                                <div><img src="images/icon/chevron-down-s.svg"></div>
+                            </div>
+                            <div class="bottom-wrap">
+                                <div class="list-wrap">
+                                    <div class="option">와이즈농장</div>
+                                    <div class="option">레이크농장</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-Line-gray-s">로그아웃</button>
+                    </div>
+                </div>
+                <!-- 상단 메뉴 영역 끝-->
+            </header>
+            
+            <main>
+                
+                <!--컨텐츠 영역 시작-->
+                <section class="content">
+                    <div class="lnb-wrap">
+                        <div class="lnb">
+                            <ul>
+                                <li><a href="#">농장정보</a></li>
+                                <li class="active"><a href="#">데이터 업로드</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cont-wrap">
+                        <div class="item-row">                     
+
+                            <!--테이블 영역 시작-->
+                            <div class="item">                            
+                                <div class="title-box">
+                                    <div>
+                                        <h5>데이터 목록</h5>
+                                    </div>                                
+                                    <select class="select-filter align-right mR5" name="정렬" required>
+                                        <option>등록순</option>
+                                        <option>파일명순</option>
+                                    </select>
+                                </div>
+
+                                <div class="table-box">
+                                    <div class="board-type3">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:60px;" />
+                                                <col/>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th><input type="checkbox" id=""></th>
+                                                    <th>파일명</th>
+                                                    <th>농장명</th>
+                                                    <th>사육형태</th>
+                                                    <th>계사</th>
+                                                    <th>계군번호</th>
+                                                    <th>품종명</th>
+                                                    <th>등록일자</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" id=""></td>
+                                                    <td>파일명.xls</td>
+                                                    <td>양계농장</td>
+                                                    <td>부화장</td>
+                                                    <td>1동</td>
+                                                    <td>22.05.01</td>
+                                                    <td>품종명</td>
+                                                    <td>23.05.01</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!--버튼 영역 시작-->
+                                <div class="btn-box">
+                                    <div>
+                                        <button type="button" class="btn-Line-gray-m">
+                                            선택 삭제</button>
+                                    </div>
+                                    <div> 
+                                        <ul class="page-num">
+                                            <li class="first"><a href="#"><img src="images/icon/chevrons-left-s.svg"></a></li>
+                                            <li class="prev"><a href="#"><img src="images/icon/chevron-left-s.svg"></a></li>
+                                            <li><a href="#" class="active">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li class="next"><a href="#"><img src="images/icon/chevron-right-s.svg"></a></li>
+                                            <li class="last"><a href="#"><img src="images/icon/chevrons-right-s.svg"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn-Line-primary-m">
+                                            데이터 등록</button>
+                                    </div>
+                                </div>
+                                <!--버튼 영역 끝-->
+                            </div>                            
+                            <!--테이블 영역 끝-->
+
+                            <!--데이터등록 영역 시작-->
+                            <div class="item item-fix">                            
+                                <div class="title-box">
+                                    <div>
+                                        <h5>데이터 등록</h5>
+                                    </div>
+                                </div>
+
+                                <div class="data-box">
+                                    <div>
+                                        <label class="label-vertical">농장명</label>
+                                        <input type="text" name="" placeholder="입력">
+                                    </div>
+                                    <div>
+                                        <label class="label-vertical">품종명</label>
+                                        <input type="text" name="" placeholder="입력">
+                                    </div>
+                                    <div>
+                                        <label class="label-vertical">사육형태</label>                                        
+                                        <div class="tab-type1">
+                                            <ul>
+                                                <li class="active"><button type="button">중계</button></li>
+                                                <li><button type="button">산란계</button></li>
+                                                <li><button type="button">부화장</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="pB10 line-bottom">
+                                        <label class="label-vertical">첨부파일</label>                                        
+                                        <div class="file-box">
+                                            <label for="file">
+                                                <div class="btn-upload">
+                                                    <img src="images/icon/upload.svg" />
+                                                    <p id="fileName">파일 선택</p>
+                                                </div>
+                                            </label>
+                                            <input type="file" name="file" id="file" onchange="javascript:document.getElementById('fileName').innerHTML = this.value">
+                                        </div>
+
+                                        <p class="caption mT7">- xls, .xlsx만 첨부 가능 <br>
+                                        - 첫번째 시트에 반드시 데이터 포함</p>
+                                    </div>
+
+                                    <!--파일 첨부시 자동으로 보여주는 영역-->
+                                    <!--<div class="text-wrap line-bottom">
+                                        <label class="label-horiz">계사</label>
+                                        <p>1<span class="text-tertiary txt14 mL3">동</span></p>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <label class="label-horiz">계군번호</label>
+                                        <p>22.05.01</p>
+                                    </div>-->
+
+                                    <button type="button" class="btn-primary-l">
+                                        등록
+                                    </button>
+                                </div>
+                            </div>
+                            <!--데이터등록 영역 끝-->
+
+                        </div>
+
+                    </div>
+
+                </section>
+                <!--컨텐츠 영역 끝-->
+
+            </main>
+
+        </div>
+    </body>
+
+    
+    <!--셀렉트박스 커스텀 시작 (농장선택)-->
+    <script>
+        const selectBoxElements = document.querySelectorAll(".select-s");
+
+        function toggleSelectBox(selectBox) {
+        selectBox.classList.toggle("active");
+        }
+
+        function selectOption(optionElement) {
+        const selectBox = optionElement.closest(".select-s");
+        const selectedElement = selectBox.querySelector(".value");
+        selectedElement.textContent = optionElement.textContent;
+        }
+
+        selectBoxElements.forEach(selectBoxElement => {
+        selectBoxElement.addEventListener("click", function (e) {
+            const targetElement = e.target;
+            const isOptionElement = targetElement.classList.contains("option");
+
+            if (isOptionElement) {
+            selectOption(targetElement);
+            }
+
+            toggleSelectBox(selectBoxElement);
+        });
+        });
+
+        document.addEventListener("click", function (e) {
+        const targetElement = e.target;
+        const isSelect = targetElement.classList.contains("select") || targetElement.closest(".select-s");
+
+        if (isSelect) {
+            return;
+        }
+
+        const allSelectBoxElements = document.querySelectorAll(".select-s");
+
+        allSelectBoxElements.forEach(boxElement => {
+            boxElement.classList.remove("active");
+        });
+        });
+    </script>
+    <!--셀렉트박스 커스텀 끝 (농장선택)-->
+</html>
